@@ -67,6 +67,7 @@ p span{
   width: 193px;
   height: 193px;
   margin-bottom: -4px;
+  margin-left: -4px;
 }
 /* .big-block img{
   width: auto;
@@ -294,9 +295,10 @@ p span{
 
 .element_1 .side-block-1{
     margin-bottom: -79px;
+    margin-left: 8px;
 }
 .element_1 .side-block-2{
-  margin-left: 136px;
+  margin-left: 140px;
   margin-top: 136px;
 }
 
@@ -333,10 +335,12 @@ p span{
 .element_3 .side-block-1{
   position: absolute;
   margin-top: -132px;
+  margin-left: 0px;
 }
 .element_3 .side-block-2{
   position: absolute;
-  margin-top: -79px;
+  margin-top: -75px;
+  margin-left: 132px;
 }
 
 
@@ -472,7 +476,7 @@ footer .lab{
 .elements{
   width: 80%;
   height: 100%;
-  margin-left: 0 auto;
+  margin: 0 auto;
 }
 .top-left,
 .top,
@@ -485,61 +489,62 @@ footer .lab{
 }
 .top{
   top: 100px;
-  left: 24.4%;
+  left: 23.15%;
 }
 .top-left{
-  top: 365px;
-  left: 11.1%;
+  top: 364px;
+  left: 10%;
 }
 .bottom-mid{
-  left: 620px;
-  top: 480px;
+  top: 478px;
+  left: 41.5%;
 }
 .right-mid{
-  left: 945px;
-  top: 345px
+  top: 346px;
+  left: 63.8%;
 }
 .bottom,
 .bottom-left{
   position: absolute;
 }
-.bottom {
-  left: 430px;
-  top: 555px;
-}
 .bottom-left{
-  left: 890px;
-  top: 290px;
+  top: 553px;
+  left: 29.2%;
+}
+.bottom{
+  top: 289px;
+  left: 60.7%;
 }
 @media (max-width: 1366px) {
   .top{
     top: 100px;
-    left: 320px;
+    left: 23.15%;
   }
   .top-left{
-    top: 365px;
-    left: 130px;
+    top: 364px;
+    left: 10%;
   }
   .bottom-mid{
-    left: 590px;
-    top: 480px;
+    top: 478px;
+    left: 41.5%;
   }
   .right-mid{
-    left: 915px;
-    top: 345px
+    top: 346px;
+    left: 63.8%;
   }
   .bottom,
   .bottom-left{
     position: absolute;
   }
-  .bottom-left {
-    left: 400px;
-    top: 555px;
+  .bottom-left{
+    top: 553px;
+    left: 29.2%;
   }
   .bottom{
-    left: 860px;
-    top: 290px;
+    top: 289px;
+    left: 60.7%;
   }
+
 }
 @media (max-width: 1280px) {
   .top{
@@ -554,10 +559,10 @@ footer .lab{
     left: 870px;
     top: 400px;
   }
-  .right-mid{
+  /* .right-mid{
     left: 740px;
     top: 210px
-  }
+  } */
   .bottom,
   .bottom-left{
     position: absolute;
@@ -584,10 +589,10 @@ footer .lab{
     left: 550px;
     top: 480px;
   }
-  .right-mid{
+  /* .right-mid{
     left: 740px;
     top: 210px
-  }
+  } */
   .bottom,
   .bottom-left{
     position: absolute;
