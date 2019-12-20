@@ -69,13 +69,6 @@ p span{
   margin-bottom: -4px;
   margin-left: -4px;
 }
-/* .big-block img{
-  width: auto;
-  height: 72px;
-  margin-left: 15px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-} */
 .big-block p{
   font-size: 11px;
   font-weight: 400;
@@ -85,7 +78,7 @@ p span{
   margin-top: 10px;
 }
 .big-block p:last-child{
-  margin-top: 110px;
+  margin-top: 119px;
 }
 .big-block .numbers p:last-child{
   margin-top: 5px;
@@ -139,6 +132,45 @@ p span{
   background-repeat: no-repeat;
   background-size: 40% 40%;
   background-position: 10px 65px;
+  animation: cap 2s ease infinite;
+}
+@keyframes cap {
+  0%{
+    background-image: url(./img/juggie.svg);
+  }
+  16% {
+    background-image: url(./img/juggie.svg);
+  }
+  17%{
+    background-image: url(./img/juggie_1.svg);
+  }
+  33% {
+    background-image: url(./img/juggie_1.svg)
+  }
+  34%{
+    background-image: url(./img/juggie_2.svg);
+  }
+  50%{
+    background-image: url(./img/juggie_2.svg);
+  }
+  51%{
+    background-image: url(./img/juggie_3.svg);
+  }
+  67%{
+    background-image: url(./img/juggie_3.svg);
+  }
+  68%{
+    background-image: url(./img/juggie_4.svg);
+  }
+  84%{
+    background-image: url(./img/juggie_4.svg);
+  }
+  85%{
+    background-image: url(./img/juggie.svg);
+  }
+  100%{
+      background-image: url(./img/juggie.svg);
+    }
 }
 
 .top-left .big-block{
@@ -152,7 +184,7 @@ p span{
   background-repeat: no-repeat;
   background-size: 40% 40%;
   background-position: 10px 65px;
-  animation: omnom 3s ease-in-out infinite;
+  animation: omnom 4s ease-in-out infinite;
 }
 @keyframes omnom {
   0%{
@@ -203,37 +235,37 @@ p span{
   59%{
     background-image: url(./img/almond_5.svg);
     background-position: 40px 70px;
-    background-size: 30px 30px;
+    background-size: 25px 25px;
   }
   60%{
     background-image: url(./img/almond_6.svg);
-    background-position: 30px 70px;
-    background-size: 30px 30px;
+    background-position: 40px 70px;
+    background-size: 15px 15px;
   }
   69%{
     background-image: url(./img/almond_6.svg);
-    background-position: 30px 70px;
-    background-size: 30px 30px;
+    background-position: 40px 70px;
+    background-size: 15px 15px;
   }
   70%{
     background-image: url(./img/almond_7.svg);
     background-position: 40px 70px;
-    background-size: 30px 30px;
+    background-size: 15px 15px;
   }
   79%{
     background-image: url(./img/almond_7.svg);
     background-position: 40px 70px;
-    background-size: 20px 20px;
+    background-size: 15px 15px;
   }
   80%{
     background-image: url(./img/almond_8.svg);
-    background-size: 30px 30px;
-    background-position: 55px 70px;
+    background-size: 15px 15px;
+    background-position: 40px 70px;
   }
   89%{
     background-image: none;
-    background-size: 30px 30px;
-    background-position: 30px 70px;
+    background-size: 15px 15px;
+    background-position: 55px 80px;
   }
   100%{
     background-image: none;
@@ -301,28 +333,6 @@ p span{
   margin-left: 140px;
   margin-top: 136px;
 }
-
-/* .last{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-left: 459px;
-  margin-top: -380px;
-}
-.last .element_1{
-  margin-left: 315px;
-  margin-top: 59px;
-}
-.last .element_3{
-  margin-left: 323px;
-  margin-top: 2px;
-}
-.bottom, .bottom-left{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-} */
-
 .first_two{
   display: flex;
   flex-direction: column;
@@ -348,8 +358,9 @@ p span{
 
 /* hovers */
 
-.bottom .big-block:hover,
-.top .big-block:hover{
+.bottom .side-block-2:hover,
+.top .side-block-1:hover{
+  color: #fff;
   background-color: var(--brown);
   animation: brown-slow 0.2s ease;
 }
@@ -502,15 +513,15 @@ footer .lab{
   top: 289px;
   left: 890px;
 }
+.top-left,
+.top,
+.bottom-mid,
+.right-mid,
+.bottom,
+.bottom-left{
+  transition: all 1.5s ease;
+}
 @media (max-width: 1366px) {
-  .top-left,
-  .top,
-  .bottom-mid,
-  .right-mid,
-  .bottom,
-  .bottom-left{
-    transition: all 2s ease;
-  }
   .top{
     top: 100px;
     left: 316px;
@@ -538,14 +549,6 @@ footer .lab{
 
 }
 @media (max-width: 1280px) {
-  .top-left,
-  .top,
-  .bottom-mid,
-  .right-mid,
-  .bottom,
-  .bottom-left{
-    transition: all 2s ease;
-  }
   .top{
     top: 100px;
     left: 273px;
@@ -571,14 +574,6 @@ footer .lab{
     left: 549px;
   }
 @media (max-width: 1152px) {
-  .top-left,
-  .top,
-  .bottom-mid,
-  .right-mid,
-  .bottom,
-  .bottom-left{
-    transition: all 2s ease;
-  }
   .top{
     top: 100px;
     left: 282px;
@@ -684,16 +679,118 @@ footer .lab{
   }
 }
 @media (max-width: 768px) {
-
+  .top{
+    top: 100px;
+    left: 345px;
+  }
+  .top-left{
+    top: 175px;
+    left: 24px;
+  }
+  .bottom-mid{
+    top: 685px;
+    left: 231px;
+  }
+  .right-mid{
+    top: 421px;
+    left: 420px;
+  }
+  .bottom-left{
+    top: 760px;
+    left: 54px;
+  }
+  .bottom{
+    top: 496px;
+    left: 243px;
+  }
+}
+@media (max-width: 670px){
+  .bottom-mid .side-block-1{
+    position: absolute;
+    margin-top: -185px;
+    margin-left: 53px;
+  }
+  .bottom-mid .side-block-2{
+    position: absolute;
+    margin-top: -128px;
+    margin-left: 185px;
+  }
+  .top{
+    top: 100px;
+    left: 261px;
+  }
+  .top-left{
+    top: 496px;
+    left: 129px;
+  }
+  .bottom-mid{
+    top: 1213px;
+    left: 216px;
+  }
+  .right-mid{
+    top: 685px;
+    left: 261px;
+  }
+  .bottom-left{
+    top: 1024px;
+    left: 84px;
+  }
+  .bottom{
+    top: 439px;
+    left: 84px;
+  }
 }
 @media (max-width: 591px) {
-
-}
-@media (max-width: 591px) {
-
+  .top{
+    top: 100px;
+    left: 227px;
+  }
+  .top-left{
+    top: 496px;
+    left: 95px;
+  }
+  .bottom-mid{
+    top: 1213px;
+    left: 182px;
+  }
+  .right-mid{
+    top: 685px;
+    left: 227px;
+  }
+  .bottom-left{
+    top: 1024px;
+    left: 50px;
+  }
+  .bottom{
+    top: 439px;
+    left: 50px;
+  }
 }
 @media (max-width: 414px) {
-
+  .top{
+    top: 100px;
+    left: 61px;
+  }
+  .top-left{
+    top: 553px;
+    left: 61px;
+  }
+  .bottom-mid{
+    top: 1402px;
+    left: 16px;
+  }
+  .right-mid{
+    top: 1006px;
+    left: 61px;
+  }
+  .bottom-left{
+    top: 949px;
+    left: 16px;
+  }
+  .bottom{
+    top: 496px;
+    left: 16px;
+  }
 }
 @media (max-width: 320px) {
 
