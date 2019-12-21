@@ -39,11 +39,11 @@ p:last-child{
   margin-top: 5px;
 }
 h1{
-font-size: 3vw;
+font-size: 48px;
 font-weight: bold;
 }
 h3{
-font-size: 1.5vw;
+font-size: 28px;
 padding-top: 10px;
 
 }
@@ -51,14 +51,14 @@ p span{
   display: flex;
   flex-direction: column;
 }
-.numbers{
+.numbers, .numbers + p{
+  font-family: 'evolventa', helvetica, sans-serif;
   margin-right: 10px;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
 }
 .numbers p:last-child{
-  font-family: 'evolventa', helvetica, sans-serif;
   font-size: 18px;
   font-weight: bold;
 }
@@ -178,6 +178,46 @@ p span{
   background-repeat: no-repeat;
   background-size: 40% 40%;
   background-position: 10px 65px;
+  animation: drip 1s ease-in-out infinite;
+}
+@keyframes drip {
+  0%{
+    background-image: url(./img/drop.svg);
+    background-position: 10px 20px;
+  }
+  24% {
+    background-image: url(./img/drop.svg);
+    background-position: 10px 20px;
+  }
+  25%{
+    background-image: url(./img/drop_2.svg);
+    background-position: 10px 35px;
+  }
+  49% {
+    background-image: url(./img/drop_2.svg);
+    background-position: 10px 35px;
+  }
+  50%{
+    background-image: url(./img/drop_3.svg);
+    background-position: 10px 50px;
+  }
+  74%{
+    background-image: url(./img/drop_3.svg);
+    background-position: 10px 50px;
+  }
+  75%{
+    background-image: url(./img/drop_4.svg);
+    background-position: 10px 65px;
+  }
+  99%{
+    background-image: url(./img/drop_4.svg);
+    background-position: 10px 65px;
+  }
+  100%{
+    background-image: url(./img/drop.svg);
+    background-position: 10px 65px;
+  }
+
 }
 .right-mid .big-block{
   background-image: url(./img/almond.svg);
@@ -316,6 +356,48 @@ p span{
   background-repeat: no-repeat;
   background-size: 40% 40%;
   background-position: 10px 65px;
+  animation: close 1.5s reverse ease infinite;
+}
+@keyframes close {
+  0%{
+    background-image: url(./img/coco.svg);
+  }
+  15% {
+    background-image: url(./img/coco.svg);
+  }
+  16%{
+    background-image: url(./img/coco_1.svg);
+  }
+  31% {
+    background-image: url(./img/coco_1.svg)
+  }
+  32%{
+    background-image: url(./img/coco_2.svg);
+  }
+  47%{
+    background-image: url(./img/coco_2.svg);
+  }
+  48%{
+    background-image: url(./img/coco_3.svg);
+  }
+  63%{
+    background-image: url(./img/coco_3.svg);
+  }
+  64%{
+    background-image: url(./img/coco_4.svg);
+  }
+  79%{
+    background-image: url(./img/coco_4.svg);
+  }
+  80%{
+    background-image: url(./img/coco_5.svg);
+  }
+  96%{
+    background-image: url(./img/coco_5.svg);
+  }
+  100%{
+    background-image: url(./img/coco.svg);
+  }
 }
 .bottom .big-block{
   background-image: url(./img/jug.svg);
@@ -433,7 +515,7 @@ p span{
 
 footer{
   font-family: 'AkzidentzGrotesk', helvetica, sans-serif;
-  margin-top: 100%;
+  margin-top: 70%;
   margin-bottom: 20px;
   margin-left: 100px;
   margin-right: 100px;
@@ -549,7 +631,9 @@ footer .lab{
 .bottom-mid,
 .right-mid,
 .bottom,
-.bottom-left{
+.bottom-left,
+header,
+footer{
   transition: all 1.5s ease;
 }
 @media (max-width: 1366px) {
@@ -580,6 +664,9 @@ footer .lab{
 
 }
 @media (max-width: 1280px) {
+  footer{
+      margin-top: 75%;
+  }
   .top{
     top: 100px;
     left: 273px;
@@ -604,13 +691,37 @@ footer .lab{
     top: 289px;
     left: 549px;
   }
+  @media (max-width: 1250px) {
+    footer{
+        margin-top: 75%;
+    }
+    .top{
+      left: 243px;
+    }
+    .top-left{
+      left: 54px;
+    }
+    .bottom-mid{
+      left: 828px;
+    }
+    .right-mid{
+      left: 696px;
+    }
+    .bottom-left{
+      left: 330px;
+    }
+    .bottom{
+      left: 519px;
+    }
+}
 @media (max-width: 1152px) {
+  footer{
+      margin-top: 90%;
+  }
   .top{
-    top: 100px;
     left: 282px;
   }
   .top-left{
-    top: 364px;
     left: 93px;
   }
   .bottom-mid{
@@ -618,19 +729,49 @@ footer .lab{
     left: 546px;
   }
   .right-mid{
-    top: 214px;
     left: 735px;
   }
   .bottom-left{
-    top: 553px;
     left: 369px;
   }
   .bottom{
-    top: 289px;
     left: 558px;
   }
 }
+@media (max-width: 1100px) {
+  footer{
+      margin-top: 95%;
+  }
+  .top{
+    top: 100px;
+    left: 242px;
+  }
+  .top-left{
+    top: 364px;
+    left: 53px;
+  }
+  .bottom-mid{
+    top: 478px;
+    left: 506px;
+  }
+  .right-mid{
+    top: 214px;
+    left: 695px;
+  }
+  .bottom-left{
+    top: 553px;
+    left: 329px;
+  }
+  .bottom{
+    top: 289px;
+    left: 518px;
+  }
+}
+
 @media (max-width: 1024px) {
+  footer{
+      margin-top: 150%;
+  }
   .top{
     top: 100px;
     left: 311px;
@@ -658,32 +799,38 @@ footer .lab{
 
 }
 @media (max-width: 900px) {
+  footer{
+      margin-top: 150%;
+  }
   .top{
-    top: 100px;
     left: 249px;
   }
   .top-left{
-    top: 364px;
     left: 60px;
   }
   .bottom-mid{
-    top: 799px;
     left: 513px;
   }
   .right-mid{
-    top: 610px;
     left: 381px;
   }
   .bottom-left{
-    top: 553px;
     left: 336px;
   }
   .bottom{
-    top: 289px;
     left: 525px;
   }
 }
 @media (max-width: 834px) {
+  header h1{
+    font-size: 36px;
+  }
+  header h3{
+    font-size: 16px;
+  }
+  footer{
+      margin-top: 150%;
+  }
   .top{
     top: 100px;
     left: 152px;
@@ -707,6 +854,26 @@ footer .lab{
   .bottom{
     top: 289px;
     left: 428px;
+  }
+}
+@media (max-width: 800px) {
+  .top{
+    left: 112px;
+  }
+  .top-left{
+    left: 54px;
+  }
+  .bottom-mid{
+    left: 54px;
+  }
+  .right-mid{
+    left: 375px;
+  }
+  .bottom-left{
+    left: 330px;
+  }
+  .bottom{
+    left: 388px;
   }
 }
 @media (max-width: 768px) {
