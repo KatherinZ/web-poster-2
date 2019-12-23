@@ -27,11 +27,11 @@ body{
   background-color: #000;
   color: #fff;
 }
-.imgs{
+/* .imgs{
   position: absolute;
   margin-left: -5000;
   margin-top: -5000;
-}
+} */
 
 header{
   margin-top: 20px;
@@ -47,7 +47,7 @@ font-size: 48px;
 font-weight: bold;
 }
 h3{
-font-size: 28px;
+font-size: 24px;
 padding-top: 10px;
 
 }
@@ -274,40 +274,43 @@ p span{
   }
   60%{
     background-image: url(./img/almond_6.svg);
-    background-position: 40px 70px;
+    background-position: 30px 70px;
     background-size: 15px 15px;
   }
   69%{
     background-image: url(./img/almond_6.svg);
-    background-position: 40px 70px;
+    background-position: 30px 70px;
     background-size: 15px 15px;
   }
   70%{
     background-image: url(./img/almond_7.svg);
-    background-position: 40px 70px;
-    background-size: 15px 15px;
+    background-position: 25px 70px;
+    background-size: 10px 10px;
   }
   79%{
     background-image: url(./img/almond_7.svg);
-    background-position: 40px 70px;
-    background-size: 15px 15px;
+    background-position: 25px 70px;
+    background-size: 10px 10px;
   }
   80%{
     background-image: url(./img/almond_8.svg);
     background-size: 15px 15px;
     background-position: 40px 70px;
   }
-  89%{
+  94%{
+    background-image: url(./img/almond_8.svg);
+    background-size: 15px 15px;
+    background-position: 55px 80px;
+  }
+  95%{
     background-image: none;
     background-size: 15px 15px;
     background-position: 55px 80px;
   }
   100%{
-    background-image: none;
+    background-image: url(./img/almond.svg);
     background-position: 15px 70px;
-    background-size: 30px 30px;
   }
-
 }
 .bottom-mid .big-block{
   background-image: url(./img/oat.svg);
@@ -481,7 +484,7 @@ p span{
   background-color: var(--orange);
   animation: orange-slow 0.2s ease;
 }
-.bottom-left .side-block-2:hover{
+.element_3 .side-block-2:hover{
   background-color: var(--blue);
   color: #000;
   animation: blue-slow 0.2s ease;
@@ -636,65 +639,117 @@ header,
 footer{
   transition: all 1.5s ease;
 }
-@media (max-width: 1366px) {
+
+@media (max-width: 1680px) {
+  footer{
+      margin-top: 55%;
+  }
   .top{
-    top: 100px;
-    left: 316px;
+    top: 157px;
+    left: 479px;
   }
   .top-left{
     top: 364px;
-    left: 127px;
+    left: 158px;
   }
   .bottom-mid{
-    top: 478px;
-    left: 580px;
+    top: 328px;
+    left: 1196px;
   }
   .right-mid{
-    top: 346px;
-    left: 901px;
+    top: 271px;
+    left: 932px;
   }
   .bottom-left{
     top: 553px;
+    left: 434px;
+  }
+  .bottom{
+    top: 346px;
+    left: 755px;
+  }
+  @media (max-width: 1440px) {
+    footer{
+        margin-top: 75%;
+    }
+    .top{
+      top: 150px;
+      left: 350px;
+    }
+    .top-left{
+      top: 414px;
+      left: 161px;
+    }
+    .bottom-mid{
+      top: 528px;
+      left: 614px;
+    }
+    .right-mid{
+      top: 396px;
+      left: 935px;
+    }
+    .bottom-left{
+      top: 603px;
+      left: 437px;
+    }
+    .bottom{
+      top: 339px;
+      left: 890px;
+    }
+  }
+@media (max-width: 1366px) {
+  .top{
+    top: 150px;
+    left: 316px;
+  }
+  .top-left{
+    top: 414px;
+    left: 127px;
+  }
+  .bottom-mid{
+    top: 528px;
+    left: 580px;
+  }
+  .right-mid{
+    top: 396px;
+    left: 901px;
+  }
+  .bottom-left{
+    top: 603px;
     left: 403px;
   }
   .bottom{
-    top: 289px;
-    left: 854px;
+    top: 339px;
+    left: 856px;
   }
 
 }
 @media (max-width: 1280px) {
-  footer{
-      margin-top: 75%;
-  }
   .top{
-    top: 100px;
+    top: 150px;
     left: 273px;
   }
   .top-left{
-    top: 364px;
+    top: 414px;
     left: 84px;
   }
   .bottom-mid{
-    top: 403px;
+    top: 453px;
     left: 858px;
   }
   .right-mid{
-    top: 214px;
+    top: 264px;
     left: 726px;
   }
   .bottom-left{
-    top: 553px;
+    top: 603px;
     left: 360px;
   }
   .bottom{
-    top: 289px;
+    top: 339px;
     left: 549px;
   }
   @media (max-width: 1250px) {
-    footer{
-        margin-top: 75%;
-    }
     .top{
       left: 243px;
     }
@@ -702,6 +757,7 @@ footer{
       left: 54px;
     }
     .bottom-mid{
+      top: 453px;
       left: 828px;
     }
     .right-mid{
@@ -717,86 +773,83 @@ footer{
 @media (max-width: 1152px) {
   footer{
       margin-top: 90%;
-      margin-left: 70px;
   }
   .top{
-    left: 282px;
+    top: 150px;
+    left: 272px;
   }
   .top-left{
-    left: 93px;
+    top: 414px;
+    left: 83px;
   }
   .bottom-mid{
-    top: 478px;
-    left: 546px;
+    top: 528px;
+    left: 536px;
   }
   .right-mid{
-    left: 735px;
+    top: 264px;
+    left: 725px;
   }
   .bottom-left{
-    left: 369px;
+    top: 603px;
+    left: 359px;
   }
   .bottom{
-    left: 558px;
+    top: 339px;
+    left: 548px;
   }
 }
 @media (max-width: 1100px) {
   footer{
-      margin-top: 95%;
-      margin-left: 70px;
+      margin-top: 90%;
   }
   .top{
-    top: 100px;
     left: 242px;
   }
   .top-left{
-    top: 364px;
     left: 53px;
   }
   .bottom-mid{
-    top: 478px;
     left: 506px;
   }
   .right-mid{
-    top: 214px;
     left: 695px;
   }
   .bottom-left{
-    top: 553px;
     left: 329px;
   }
   .bottom{
-    top: 289px;
     left: 518px;
   }
 }
 
 @media (max-width: 1024px) {
   footer{
-      margin-top: 150%;
+      margin-top: 140%;
       margin-left: 60px;
   }
   .top{
-    top: 100px;
+    top: 150px;
     left: 311px;
   }
   .top-left{
-    top: 364px;
+    top: 414px;
     left: 122px;
   }
   .bottom-mid{
-    top: 799px;
+    top: 849px;
     left: 575px;
   }
   .right-mid{
-    top: 610px;
+    top: 660px;
     left: 443px;
   }
   .bottom-left{
-    top: 553px;
+    top: 603px;
     left: 398px;
   }
   .bottom{
-    top: 289px;
+    top: 339px;
     left: 587px;
   }
 
@@ -827,37 +880,37 @@ footer{
 }
 @media (max-width: 834px) {
   header h1{
-    font-size: 36px;
+    font-size: 40px;
   }
   header h3{
-    font-size: 16px;
+    font-size: 20px;
   }
   footer{
       margin-top: 178%;
       margin-left: 50px;
   }
   .top{
-    top: 100px;
+    top: 140px;
     left: 152px;
   }
   .top-left{
-    top: 421px;
+    top: 461px;
     left: 94px;
   }
   .bottom-mid{
-    top: 799px;
+    top: 839px;
     left: 94px;
   }
   .right-mid{
-    top: 667px;
+    top: 707px;
     left: 415px;
   }
   .bottom-left{
-    top: 610px;
+    top: 650px;
     left: 370px;
   }
   .bottom{
-    top: 289px;
+    top: 329px;
     left: 428px;
   }
 }
@@ -887,38 +940,39 @@ footer{
 }
 @media (max-width: 768px) {
   footer{
-      margin-top: 185%;
+      margin-top: 170%;
       margin-left: 50px;
   }
   .top{
-    top: 100px;
-    left: 345px;
+    top: 140px;
+    left: 335px;
   }
   .top-left{
-    top: 175px;
-    left: 24px;
+    top: 215px;
+    left: 14px;
   }
   .bottom-mid{
-    top: 685px;
-    left: 231px;
+    top: 725px;
+    left: 221px;
   }
   .right-mid{
-    top: 421px;
-    left: 420px;
+    top: 461px;
+    left: 410px;
   }
   .bottom-left{
-    top: 760px;
-    left: 54px;
+    top: 800px;
+    left: 44px;
   }
   .bottom{
-    top: 496px;
-    left: 243px;
+    top: 536px;
+    left: 233px;
   }
 }
 @media (max-width: 670px){
   footer{
       margin-top: 270%;
-      margin-left: 50px;
+      margin-left: 40px;
+      margin-right: 40px;
   }
   .bottom-mid .side-block-1{
     position: absolute;
@@ -931,121 +985,157 @@ footer{
     margin-left: 185px;
   }
   .top{
-    top: 100px;
+    top: 140px;
     left: 261px;
   }
   .top-left{
-    top: 496px;
+    top: 536px;
     left: 129px;
   }
   .bottom-mid{
-    top: 1213px;
+    top: 1253px;
     left: 216px;
   }
   .right-mid{
-    top: 685px;
+    top: 725px;
     left: 261px;
   }
   .bottom-left{
-    top: 1024px;
+    top: 1064px;
     left: 84px;
   }
   .bottom{
-    top: 439px;
+    top: 479px;
     left: 84px;
   }
 }
-@media (max-width: 591px) {
+@media (max-width: 630px) {
   footer{
       margin-top: 320%;
       margin-left: 50px;
   }
   .top{
-    top: 100px;
     left: 227px;
   }
   .top-left{
-    top: 496px;
     left: 95px;
   }
   .bottom-mid{
-    top: 1213px;
     left: 182px;
   }
   .right-mid{
-    top: 685px;
     left: 227px;
   }
   .bottom-left{
-    top: 1024px;
     left: 50px;
   }
   .bottom{
-    top: 439px;
     left: 50px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 540px) {
   footer{
-      margin-top: 320%;
-      margin-left: 50px;
+      margin-top: 450%;
+      margin-left: 0px;
   }
   .top{
-    left: 197px;
+    top: 160px;
+    left: 122px;
   }
   .top-left{
-    left: 65px;
+    top: 613px;
+    left: 122px;
   }
   .bottom-mid{
-    left: 152px;
+    top: 1462px;
+    left: 77px;
   }
   .right-mid{
-    left: 197px;
+    top: 1066px;
+    left: 122px;
   }
   .bottom-left{
-
-    left: 20px;
+    top: 1009px;
+    left: 77px;
   }
   .bottom{
+    top: 556px;
+    left: 77px;
+  }
+}
+@media (max-width: 475px) {
+  footer{
+      margin-top: 450%;
+      margin-left: 0px;
+  }
+  .top{
+    left: 91px;
+  }
+  .top-left{
+    left: 91px;
+  }
+  .bottom-mid{
 
-    left: 20px;
+    left: 46px;
+  }
+  .right-mid{
+    left: 91px;
+  }
+  .bottom-left{
+    left: 46px;
+  }
+  .bottom{
+    left: 46px;
   }
 }
 @media (max-width: 414px) {
   footer{
-      margin-top: 550%;
-      margin-left: 0px;
-  }
-  .top{
-    top: 150px;
-    left: 61px;
-  }
-  .top-left{
-    top: 603px;
-    left: 61px;
-  }
-  .bottom-mid{
-    top: 1452px;
-    left: 16px;
-  }
-  .right-mid{
-    top: 1056px;
-    left: 61px;
-  }
-  .bottom-left{
-    top: 999px;
-    left: 16px;
-  }
-  .bottom{
-    top: 546px;
-    left: 16px;
-  }
-}
-@media (max-width: 320px) {
-  footer{
       margin-top: 480%;
       margin-left: 0px;
   }
+  footer .lab {
+    margin-left: -10px;
+  }
+  footer .lab span {
+    margin-left: -20px;
+  }
+  footer .lab + p{
+    margin-left: 30px;
+  }
+  .top{
+    left: 61px;
+  }
+  .top-left{
+    left: 61px;
+  }
+  .bottom-mid{
+
+    left: 16px;
+  }
+  .right-mid{
+    left: 61px;
+  }
+  .bottom-left{
+    left: 16px;
+  }
+  .bottom{
+    left: 16px;
+  }
+}
+@media (max-width: 375px) {
+  footer{
+      margin-top: 420%;
+      margin-left: 0px;
+  }
+  header{
+    margin-left: 30px;
+  }
+ header h1{
+   font-size: 32px;
+ }
+ header h3{
+   font-size: 16px;
+ }
   .side-block-1,
   .side-block-2{
     width: 103px;
@@ -1080,7 +1170,7 @@ footer{
   height: 147px;
 }
 .right-mid .big-block{
-  background-size: 35% 35%;
+  background-size: 40% 35%;
     background-position: 15% 40%;
 }
 .big-block h2{
@@ -1119,6 +1209,36 @@ footer{
   font-size: 14px;
 
 }
+  .top{
+    top: 150px;
+    left: 77px;
+  }
+  .bottom{
+    top: 467px;
+    left: 45px;
+  }
+  .top-left{
+    top: 491px;
+    left: 77px;
+  }
+  .bottom-mid{
+    top: 1149px;
+    left: 45px;
+  }
+  .right-mid{
+    top: 832px;
+    left: 77px;
+  }
+  .bottom-left{
+    top: 808px;
+    left: 45px;
+  }
+}
+@media (max-width: 320px) {
+  footer{
+      margin-top: 490%;
+      margin-left: 0px;
+  }
   .top{
     top: 150px;
     left: 47px;
