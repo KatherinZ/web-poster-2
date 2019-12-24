@@ -639,7 +639,35 @@ header,
 footer{
   transition: all 1.5s ease;
 }
-
+@media (max-width: 1920px){
+  footer{
+      margin-top: 55%;
+  }
+  .top{
+    top: 157px;
+    left: 600px;
+  }
+  .top-left{
+    top: 364px;
+    left: 279px;
+  }
+  .bottom-mid{
+    top: 328px;
+    left: 1317px;
+  }
+  .right-mid{
+    top: 271px;
+    left: 1053px;
+  }
+  .bottom-left{
+    top: 553px;
+    left: 555px;
+  }
+  .bottom{
+    top: 346px;
+    left: 876px;
+  }
+}
 @media (max-width: 1680px) {
   footer{
       margin-top: 55%;
@@ -1086,6 +1114,31 @@ footer{
   }
   .bottom{
     left: 46px;
+  }
+}
+@media (max-width: 425px) {
+  footer{
+      margin-top: 470%;
+      margin-left: 0px;
+  }
+  .top{
+    left: 66px;
+  }
+  .top-left{
+    left: 66px;
+  }
+  .bottom-mid{
+
+    left: 21px;
+  }
+  .right-mid{
+    left: 66px;
+  }
+  .bottom-left{
+    left: 21px;
+  }
+  .bottom{
+    left: 21px;
   }
 }
 @media (max-width: 414px) {
