@@ -1223,8 +1223,99 @@ footer{
   height: 147px;
 }
 .right-mid .big-block{
-  background-size: 40% 35%;
-    background-position: 15% 40%;
+  background-size: 35% 35%;
+      animation: 4s omnom ease-in-out infinite;
+    }
+    @keyframes omnom {
+      0%{
+        background-image: url(./img/almond.svg);
+        background-position: 15px 55px;
+      }
+      9%{
+        background-image: url(./img/almond.svg);
+        background-position: 15px 55px;
+      }
+      10%{
+        background-image: url(./img/almond_1.svg);
+        background-position: 20px 55px;
+      }
+      19%{
+          background-image: url(./img/almond_1.svg);
+          background-position: 20px 55px;
+        }
+      20%{
+        background-image: url(./img/almond_2.svg);
+        background-position: 25px 55px;
+      }
+      29%{
+        background-image: url(./img/almond_2.svg);
+        background-position: 25px 55px;
+      }
+      30%{
+        background-image: url(./img/almond_3.svg);
+        background-position: 30px 55px;
+      }
+      39%{
+        background-image: url(./img/almond_3.svg);
+        background-position: 30px 55px;
+      }
+      40%{
+        background-image: url(./img/almond_4.svg);
+        background-position: 35px 55px;
+      }
+      49%{
+        background-image: url(./img/almond_4.svg);
+        background-position: 35px 55px;
+      }
+      50%{
+        background-image: url(./img/almond_5.svg);
+        background-position: 40px 55px;
+        background-size: 30px 30px;
+      }
+      59%{
+        background-image: url(./img/almond_5.svg);
+        background-position: 40px 55px;
+        background-size: 25px 25px;
+      }
+      60%{
+        background-image: url(./img/almond_6.svg);
+        background-position: 40px 55px;
+        background-size: 15px 15px;
+      }
+      69%{
+        background-image: url(./img/almond_6.svg);
+        background-position: 40px 55px;
+        background-size: 15px 15px;
+      }
+      70%{
+        background-image: url(./img/almond_7.svg);
+        background-position: 40px 55px;
+        background-size: 7px 7px;
+      }
+      79%{
+        background-image: url(./img/almond_7.svg);
+        background-position: 40px 55px;
+        background-size: 7px 7px;
+      }
+      80%{
+        background-image: url(./img/almond_8.svg);
+        background-size: 15px 15px;
+        background-position: 40px 55px;
+      }
+      94%{
+        background-image: url(./img/almond_8.svg);
+        background-size: 15px 15px;
+        background-position: 55px 70px;
+      }
+      95%{
+        background-image: none;
+        background-size: 15px 15px;
+        background-position: 55px 70px;
+      }
+      100%{
+        background-image: url(./img/almond.svg);
+        background-position: 15px 60px;
+      }
 }
 .big-block h2{
   font-size: 23px;
